@@ -119,7 +119,7 @@
       edge[stateEdge] node[edgeLabel, xshift=-2em]{ACK} 
       (finWait2.north);
   \draw ($(finWait1.east) + (0,-.5em)$) 
-      edge[stateEdge, bend left=22.5] node[edgeLabel, yshift=1em]{FIN}
+      edge[stateEdge, bend left=22.5] node[edgeLabel, yshift=1em]{FIN/ACK} 
       (closing.north);
   \draw (finWait1.south east) 
       edge[stateEdge] node[edgeLabel, xshift=1em, yshift=2em, text width=3em]{FIN + ACK/ACK} 
