@@ -1,0 +1,13 @@
+--tolerance_usecs=1000000
+0 socket(..., SOCK_STREAM, IPPROTO_TCP) = 3
++0 setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
++0 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
++0 bind(3, ..., ...) = 0
++0 listen(3, 1) = 0
+
++0  < S 0:0(0) win 65535  <mss 100>
++0  > S. 0:0(0) ack 1 <...>
+// 故意注释掉下面这一行
+// +.1 < . 1:1(0) ack 1 win 65535
+
++0 `sleep 1000000`
