@@ -1,0 +1,7 @@
+// 新建一个 server socket
++0 socket(..., SOCK_STREAM, IPPROTO_TCP) = 3
+
+// 客户端 connect
++0 connect(3, ..., ...) = -1
+
++0 `sleep 1000000`
